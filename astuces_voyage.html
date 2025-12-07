@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parkonotes - Votre guide des parcs d'attraction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="logo_parkonotes.png" alt="Logo Parkonotes - Votre guide des parcs d'attraction">
+        </div>
+        <p>Aventures dans chaque note !</p>
+    </header>
+<div class="menu-toggle">Menu</div>
+    <nav>
+        <ul class="main-nav">
+            <li><a href="#">Accueil</a></li>
+            <li class="dropdown">
+                <a href="#">Astuces</a>
+<!--                <div class="dropdown-content">
+                    <a href="#">Bon à savoir</a>
+                    <a href="#">Transport</a>
+                    <a href="#">Hébergement</a>
+                    <a href="#">Pass annuel</a>
+                    <a href="#">Militaire</a>
+                </div>-->
+            </li>
+            <li><a href="#">Photothèque</a></li>
+            <li class="dropdown">
+                <a href="#">Parcs</a>
+                <div class="dropdown-content">
+<!--                    <a href="#">Disneyland Paris</a>
+                    <a href="#">Futuroscope</a>
+                    <a href="#">Puy du fou</a>
+                    <a href="#">Port Aventura</a>
+                    <a href="#">Parc Spirou</a>
+                    <a href="#">Parc Walibi (Agen)</a>-->
+                    <a href="europa_park.html">Europa Park</a>
+                    <a href="disneyworld.html">Disneyworld</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#">Nos voyages</a>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="feed">
+        
+        <div class="post">
+            <h2>Titre de la première aventure</h2>
+            <p class="date">Publié le 3 septembre 2025</p>
+            <p>Ici, tu peux raconter en détail ta première aventure. Tu peux ajouter des photos, des vidéos, et des descriptions. Par exemple, "Aujourd'hui, nous avons exploré la forêt de Brocéliande et découvert un lac caché..."</p>
+        </div>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Parkonotes. Disneyland est un rêve que tout le monde peut réaliser.</p>
+    </footer>
+    <script>
+const menuToggle = document.querySelector('.menu-toggle');
+const mainNav = document.querySelector('.main-nav');
+
+menuToggle.addEventListener('click', () => {
+    mainNav.classList.toggle('visible');
+});
+</script>
+
+</body>
+</html>
